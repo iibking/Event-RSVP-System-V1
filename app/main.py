@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.api.v1.event import event_router
+from api.v1.event import event_router
 
 
 app = FastAPI(title="Event RSVP System")

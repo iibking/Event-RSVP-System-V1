@@ -1,7 +1,7 @@
 from fastapi import APIRouter, status, Form, UploadFile, File, HTTPException
 from typing import Optional, List
-from app.schemas.event_schema import Event, RSVP
-from app.core.db import events, rsvps
+from schemas.event_schema import Event, RSVP
+from core.db import events, rsvps
 
 
 event_router = APIRouter()
