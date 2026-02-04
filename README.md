@@ -79,7 +79,7 @@ pip install -r requirements.txt
 To start the application:
 
 ```bash
-python app/main.py
+uvicorn main:app
 ```
 
 The server will be available at `http://localhost:8000`
@@ -97,7 +97,7 @@ This project was developed by a dedicated team of developers:
 | Kpamor Raphael Terngu (Raph)        | Team Member |
 | Olawoyin Jeremiah Eniola (Jeremiah) | Team Member |
 | Abdullahi Ataurrahman (G.Man)       | Team Member |
-| Omaku Andrew (Andrew)               | Team Member |
+| Omaku Andrew (Andrew-deb)               | Team Member |
 | Abagun Omotoyosi (Error')           | Team Member |
 | Okeke Kenechukwu (Kene)             | Team Member |
 | Kosisochukwu Emmanuel Okoye (Sage)  | Team Member |
