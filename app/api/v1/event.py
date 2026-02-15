@@ -57,6 +57,12 @@ async def create_rsvp(
     # Find the event
     for event in events:
         if event["id"] == event_id:
+
+            # Check if user has already RSVPed
+            for rsvp in rsvps:
+                if rsvp["event_id"] == event_id and rsvp["email"] == email:
+                    raise HTTPException(status_code=400, detail="Already RSVPed")
+                
             # Create RSVP
             rsvp_data = {"name": name, "email": email, "event_id": event_id}
             rsvps.append(rsvp_data)
